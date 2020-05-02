@@ -1,0 +1,1 @@
+Designer es para los archivos *.ui obtenidos del QtDesigner.
