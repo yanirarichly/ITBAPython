@@ -21,12 +21,12 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.column = ""
         self.pushButton_Unificar.clicked.connect(self.get_column)
         self.actionAbrir.triggered.connect(self.get_file)
-        self.contador = 0
         self.archivo = []
 
 #Esta función obtiene la ruta de los archivos a unificar y la muestra en pantalla
     def get_file(self):
         self.nombre = QFileDialog.getOpenFileNames(self, "Abrir Archivo", "", "(*.xlsx)")
+        self.contador = 0
         texto = "Archivos selccionados:" + "\n"
         for x in (self.nombre[0]):
             self.contador = self.contador + 1
@@ -40,7 +40,6 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 QMessageBox.Ok
             )
             self.widgetO.show()
-            self.contador = 0
 
 #get_column y get_text funcionan juntas para que el texto que introduce el usuario como columna comun sea key de la unificación posterior
     def get_column(self):
@@ -95,10 +94,10 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 union.to_excel("listas_unificadas.xlsx")
                 self.exito()
 
-"""
-Esta función muestra un mensaje de éxito si se logra la unificación y
-reinicia las variables clave del inicio por si se quiere realizar otra operación
-"""
+    """
+    Esta función muestra un mensaje de éxito si se logra la unificación y
+    reinicia las variables clave del inicio por si se quiere realizar otra operación
+    """
     def exito(self):
         self.widgetInfo = QMessageBox(
             QMessageBox.Information,
@@ -107,5 +106,4 @@ reinicia las variables clave del inicio por si se quiere realizar otra operació
             QMessageBox.Ok
         )
         self.widgetInfo.show()
-        self.contador = 0
         self.archivo = []
