@@ -71,15 +71,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             union = union.drop_duplicates()
             union.fillna("-", inplace=True)
             union.to_excel("listas_unificadas.xlsx")
-            self.widgetInfo = QMessageBox(
-                QMessageBox.Information,
-                "Operación exitosa",
-                "Sus bases de datos fueron unificadas correctamente",
-                QMessageBox.Ok
-            )
-            self.widgetInfo.show()
-            self.contador = 0
-            self.archivo = []
+            self.exito()
 
         elif self.contador > 2:
             union = pd.merge(self.archivo[0], self.archivo[1], on=self.column)
@@ -94,12 +86,15 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             i = i + 1
             if self.contador > 2:
                 union.to_excel("listas_unificadas.xlsx")
-                self.widgetInfo = QMessageBox(
-                    QMessageBox.Information,
-                    "Operación exitosa",
-                    "Sus bases de datos fueron unificadas correctamente",
-                    QMessageBox.Ok
-                )
-                self.widgetInfo.show()
-                self.contador = 0
-                self.archivo = []
+                self.exito()
+
+    def exito(self):
+        self.widgetInfo = QMessageBox(
+            QMessageBox.Information,
+            "Operación exitosa",
+            "Sus bases de datos fueron unificadas correctamente",
+            QMessageBox.Ok
+        )
+        self.widgetInfo.show()
+        self.contador = 0
+        self.archivo = []
