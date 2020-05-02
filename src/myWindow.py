@@ -1,3 +1,6 @@
+"""
+Este programa puede unificar bases de datos .xlsx contenidas en una misma carpeta
+"""
 from src.ui.myWindow import *
 from PyQt5.QtWidgets import QWidget, QDialog, QComboBox, QMessageBox, QFileDialog, QApplication
 from src.app import *
@@ -10,6 +13,7 @@ app = QApplication(sys.argv)
 
 class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
+#Esta función define la interfaz e inicializa algunas variables clave
     def __init__(self, *args, **kwargs):
         QtWidgets.QMainWindow.__init__(self, *args, **kwargs)
         self.setupUi(self)
@@ -20,6 +24,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.contador = 0
         self.archivo = []
 
+#Esta función obtiene la ruta de los archivos a unificar y la muestra en pantalla
     def get_file(self):
         self.nombre = QFileDialog.getOpenFileNames(self, "Abrir Archivo", "", "(*.xlsx)")
         texto = "Archivos selccionados:" + "\n"
@@ -37,6 +42,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             self.widgetO.show()
             self.contador = 0
 
+#get_column y get_text funcionan juntas para que el texto que introduce el usuario como columna comun sea key de la unificación posterior
     def get_column(self):
         self.column = self.get_text()
         self.backend()
@@ -46,6 +52,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         text_split = text.split(" ")
         return text_split
 
+#Esta función unifica los archivos seleccionados
     def backend(self):
         j = 0
         while self.contador > j:
@@ -88,6 +95,10 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 union.to_excel("listas_unificadas.xlsx")
                 self.exito()
 
+"""
+Esta función muestra un mensaje de éxito si se logra la unificación y
+reinicia las variables clave del inicio por si se quiere realizar otra operación
+"""
     def exito(self):
         self.widgetInfo = QMessageBox(
             QMessageBox.Information,
