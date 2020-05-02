@@ -79,6 +79,7 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             )
             self.widgetInfo.show()
             self.contador = 0
+            self.archivo = []
 
         elif self.contador > 2:
             union = pd.merge(self.archivo[0], self.archivo[1], on=self.column)
@@ -101,3 +102,4 @@ class MyWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 )
                 self.widgetInfo.show()
                 self.contador = 0
+                self.archivo = []

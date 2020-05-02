@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="293447fc-45ff-4771-9453-2bfc92150e3c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/simulador-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/simulador-python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/myWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myWindow.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,9 +22,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="9" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="204">
               <caret line="12" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="e#17#27#0" expanded="true" />
@@ -40,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/myWindow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="50" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="50" />
+            <state relative-caret-position="1054">
+              <caret line="104" column="33" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -87,7 +92,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="20" />
     <option name="width" value="1750" />
     <option name="height" value="980" />
@@ -104,8 +109,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="PythonITBA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PythonITBA" type="462c0819:PsiDirectoryNode" />
+              <item name="ITBAPython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITBAPython" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ITBAPython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ITBAPython" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,10 +258,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20211361" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18163805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -351,6 +361,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/myWindow.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -379,13 +396,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/compile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/myWindow.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -464,9 +474,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/compile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="204">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="e#17#27#0" expanded="true" />
@@ -476,8 +493,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/myWindow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="50" />
+        <state relative-caret-position="1054">
+          <caret line="104" column="33" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
