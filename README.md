@@ -1,7 +1,5 @@
-## Proyecto Python ITBA
+## Proyecto Python ITBA💾
  GUI que permite unificar bases de datos provenientes de archivos .xlsx
- 
- ![Happy Gif](https://github.com/yanirarichly/ITBAPython/blob/master/ArchivosReadMe/source.gif)
  
 Para correr el programa son necesarios PyQt5, Pandas y XlsxWriter
 
