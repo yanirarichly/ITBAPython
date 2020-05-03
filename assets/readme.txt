@@ -1,1 +1,0 @@
-En assets se ubican los recursos como archivos de audio, imágenes o videos. Son recursos para el diseño de la ui.
