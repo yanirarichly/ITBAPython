@@ -3,7 +3,7 @@
  
 Para correr el programa son necesarios PyQt5, Pandas y XlsxWriter
 
-![Captura del Programa](https://github.com/yanirarichly/ITBAPython/blob/master/ArchivosReadMe/Captura.PNG)
+![Captura del Programa](https://github.com/yanirarichly/ITBAPython/blob/master/ArchivosReadMe/capturanueva.JPG)
 
 Para consultas<br/>
 e-mail: yanimaripop@gmail.com<br/>
