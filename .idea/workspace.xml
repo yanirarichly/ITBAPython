@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="293447fc-45ff-4771-9453-2bfc92150e3c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/myWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/myWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/myWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/myWindow.py" afterDir="false" />
-    </list>
+    <list default="true" id="293447fc-45ff-4771-9453-2bfc92150e3c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="979" />
